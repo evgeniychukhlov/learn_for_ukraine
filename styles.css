@@ -1,0 +1,661 @@
+body {
+  margin: 0 auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: "Basis Grotesque Pro";
+}
+@font-face {
+  font-family: "Basis Grotesque Pro";
+  font-weight: 400;
+  src: url(fonts/BasisGrotesquePro-Light.woff) format(woff);
+}
+@font-face {
+  font-family: "Basis Grotesque Bold";
+  font-weight: 400;
+  src: url(fonts/BasisGrotesquePro-Bold.woff) format(woff);
+}
+h1 {
+  font-weight: 700;
+}
+.container {
+  font-size: 20px;
+  padding-right: 60px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 540px;
+  margin-top: -120px;
+  text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+  color: black;
+  padding: 55px 40px 10px 10px;
+  float: right;
+  margin-right: 20px;
+  word-spacing: 5px;
+}
+.logo {
+  position: relative;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.ukr {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: -90px;
+  margin-left: 10px;
+  color: #0536fc;
+  flex: unset;
+}
+
+.logo::after {
+  content: "Програма для змін у країні";
+  font-size: 20px;
+  position: absolute;
+  top: -3px;
+  left: 50px;
+  opacity: 0.35;
+}
+
+.main_container {
+  width: 100%;
+  height: 820px;
+  display: flex;
+  flex-direction: row;
+}
+.learn_for_ukraine {
+  flex: 1;
+  background-color: white;
+  width: 50%;
+  padding-left: 210px;
+  padding-top: 187px;
+}
+.programm {
+  font-family: "Basis Grotesque Bold";
+  text-transform: uppercase;
+  color: #0536fc;
+  font-weight: 900;
+}
+.text2 {
+  font-family: "Basis Grotesque Bold";
+  font-size: 80px;
+  line-height: 75px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.container_2_text {
+  font-family: "Basis Grotesque Bold";
+  font-weight: 700;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+.container_3_people {
+  font-family: "Basis Grotesque Bold";
+}
+.organization {
+  margin-top: 70px;
+}
+.button {
+  background: #0536fc;
+  color: white;
+  width: 213px;
+  height: 55px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-top: 100px;
+  cursor: pointer;
+  border: 0;
+}
+.image_boy {
+  width: 50%;
+  background-image: url(img/pexels-anastasia-shuraeva-8467295\ 2.jpg);
+  background-size: cover;
+}
+
+.container_2_block_left {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #ff8201;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+.peace_of_logo {
+  position: absolute;
+  margin-left: 750px;
+  margin-top: 141px;
+  opacity: 0.35;
+}
+.full_logo {
+  position: absolute;
+  margin-left: 385px;
+  margin-top: 0;
+  opacity: 0.35;
+}
+.container_2_block_right {
+  padding-top: 150px;
+  padding-left: 50px;
+}
+
+.container3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+}
+.container3_block_1 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+  width: 50%;
+}
+.container_3_people {
+  color: #0536fc;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 210px;
+}
+.container_3_h1 {
+  font-family: "Basis Grotesque Bold";
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 210px;
+}
+
+.container_3_img {
+  width: 100%;
+  height: 100%;
+}
+.container3_text_1 {
+  margin-left: 50px;
+  line-height: 0%;
+}
+.container3_text_2 {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+.container3_text_3 {
+  margin-left: 50px;
+  margin-top: 210px;
+}
+
+.flex_width {
+  width: 25%;
+}
+
+.vector {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: white;
+  margin-left: auto;
+  margin-top: auto;
+  padding: 35px;
+}
+
+.container3_flex {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  height: auto;
+}
+
+.hover:hover {
+  background-color: #0536fc;
+  color: white;
+}
+
+.technology_container_image {
+  background-image: url(img/pexels-tima-miroshnichenko-5428267\ 1.jpg);
+  height: auto;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding-top: 220px;
+  padding-bottom: 420px;
+  margin-top: 200px;
+}
+.technology_container_text_1 {
+  font-family: "Basis Grotesque Bold";
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-left: 300px;
+}
+.technology_container_text_2 {
+  font-family: "Basis Grotesque Bold";
+  font-weight: 700;
+  font-size: 38px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-left: 300px;
+}
+.technology_container_flex {
+  display: flex;
+  flex-direction: row;
+}
+.technology_container_flex_details {
+  padding-top: 50px;
+  padding-left: 50px;
+  font-size: 24px;
+  border-left: 3px solid #e0e0e0;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.technology_container_flex_details:hover {
+  background-color: #0536fc;
+  color: white;
+}
+
+.technology_container_text_block_1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+.technology_container_text_block_2 {
+  margin-top: 80px;
+  padding-bottom: 87px;
+  margin-right: 50px;
+}
+.problems_container_1_text {
+  width: 50%;
+  font-family: "Basis Grotesque Pro";
+  opacity: 0.35;
+  display: flex;
+  justify-content: center;
+  margin-top: 204px;
+}
+.problems_container_1_1 {
+  width: 50%;
+  margin-top: 100px;
+}
+.problems_text {
+  margin-left: 80px;
+}
+.problems_container2 {
+  display: flex;
+  justify-content: flex-end;
+  grid-gap: 170px;
+  margin-right: 300px;
+}
+.block_number {
+  font-family: "Basis Grotesque Pro";
+  font-weight: 900;
+  font-size: 130px;
+  margin-left: 107px;
+  margin-top: -124px;
+}
+.block_text {
+  margin-top: -142px;
+}
+
+@media only screen and (max-width: 1440px) {
+  .container3_text_3 {
+    margin-top: 50px;
+  }
+  .container3_block_1 {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  a {
+    margin-right: -24px;
+  }
+  .logo {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 10px;
+  }
+  .text2 {
+    font-size: 65px;
+  }
+  .container {
+    margin-left: 360px;
+  }
+  .learn_for_ukraine {
+    padding-left: 135px;
+  }
+  .full_logo {
+    position: unset;
+    margin-left: -50px;
+  }
+  .peace_of_logo {
+    display: none;
+  }
+  .container3_flex {
+    padding: 0;
+  }
+  .technology_container_text_2 {
+    margin-left: 100px;
+  }
+  .technology_container_text_1 {
+    margin-left: 100px;
+  }
+
+  .container3_block_1 {
+    margin: 0;
+    padding-left: 0;
+    justify-content: center;
+  }
+  .container_2_text {
+    font-size: 35px;
+  }
+  .container_3_people {
+    margin-left: 45px;
+  }
+  .container_3_h1 {
+    margin-left: 45px;
+    font-size: 35px;
+  }
+  .technology_container_text_block_2 {
+    margin-top: 20px;
+    padding: 0;
+    margin-right: 50px;
+  }
+  .technology_container_flex_details {
+    padding-left: 15px;
+    font-size: 16px;
+  }
+  .problems_container2 {
+    margin-right: 35px;
+    margin-top: -260px;
+  }
+  .technology_container_image {
+    margin-top: 100px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .logo::after {
+    display: none;
+  }
+  .container {
+    margin-left: 120px;
+    font-size: 18px;
+  }
+  .technology_container_flex {
+    flex-wrap: wrap;
+  }
+  .technology_container_image {
+    height: auto;
+    width: auto;
+    background-size: contain;
+    padding-bottom: 15px;
+  }
+  .technology_container_text_1 {
+    margin-left: 100px;
+    margin-top: -58px;
+  }
+  .learn_for_ukraine {
+    padding-left: 70px;
+  }
+
+  .container_3_h1 {
+    font-size: 24px;
+  }
+  .container3_flex {
+    padding-top: 10px;
+  }
+  .container3_text_3 {
+    margin-top: 0px;
+  }
+  .container3_text_2 {
+    margin-top: 10px;
+  }
+  .vector {
+    padding: 10px;
+  }
+  .problems_container2 {
+    grid-gap: 40px;
+    margin-top: -140px;
+  }
+  .technology_container_flex_details {
+    padding-left: 50px;
+    border-bottom: 3px solid #e0e0e0;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .web {
+    display: none;
+  }
+  .main_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .learn_for_ukraine {
+    background-color: white;
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  .image_boy {
+    margin-top: 100px;
+    width: 100%;
+    height: 800px;
+    background-image: url(img/pexels-anastasia-shuraeva-8467295\ 2.jpg);
+    background-size: cover;
+  }
+  .container_2_block_right {
+    padding-top: 10px;
+    padding-left: 50px;
+  }
+  .container3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 72px;
+  }
+  .technology_container_image {
+    height: auto;
+    width: auto;
+    background-size: contain;
+    padding-bottom: 10px;
+  }
+  .technology_container_text_1 {
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-left: 40px;
+    margin-top: -120px;
+  }
+  .technology_container_text_2 {
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-left: 40px;
+  }
+  .technology_container_flex {
+    flex-direction: column;
+    max-width: 500px;
+  }
+  .technology_container_flex_details {
+    font-size: 16px;
+    padding-top: 20px;
+    border-bottom: 3px solid #e0e0e0;
+    max-width: 500px;
+    border-left: 0;
+    height: auto;
+  }
+  .technology_container_text_block_1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
+  .technology_container_text_block_2 {
+    width: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    position: unset;
+  }
+  .vector {
+    margin-top: -25px;
+    margin-left: 450px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .container3 {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+  }
+  .container3_flex {
+    max-width: 500px;
+  }
+  .container3_block_1 {
+    width: 100%;
+    height: 100%;
+  }
+  .container3_text2 {
+    margin-left: 50px;
+  }
+  .container3_text_people {
+    margin-left: 50px;
+    margin-top: 150px;
+  }
+  .flex_width {
+    width: 100%;
+  }
+  .container3_image_class {
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+  }
+  .border {
+    border-bottom: 3px solid #e0e0e0;
+  }
+  .container3_text_block_1 {
+    margin-top: -60px;
+  }
+  .container3_text_block_2 {
+    margin-top: 100px;
+    margin-bottom: 120px;
+  }
+
+  .vector_container3 {
+    margin-top: -60px;
+    margin-left: 435px;
+  }
+  .container3_text_3_text_number {
+    position: unset;
+    margin-top: 20px;
+  }
+  .container3_text_3_block_1 {
+    position: unset;
+    margin-top: 40px;
+  }
+  .container3_text_3_block_2 {
+    position: unset;
+    margin-top: 100px;
+    margin-bottom: 120px;
+  }
+  .container3_text_3_text_number {
+    position: unset;
+  }
+
+  .vector_container3_text_3 {
+    margin-top: -61px;
+    margin-left: 436px;
+  }
+  .problems_container2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    align-items: center;
+    text-align: center;
+  }
+  .block_number {
+    margin-left: 100px;
+  }
+  .block_img {
+    margin-left: -100px;
+  }
+  .problems_container_1_1 {
+    width: 100%;
+    margin-top: 100px;
+  }
+  .problems_text {
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width: 428px) {
+  .learn_for_ukraine {
+    background-color: white;
+    width: 100%;
+    padding-left: 30px;
+    padding-top: 10px;
+  }
+  .vector {
+    margin-left: 378px;
+  }
+  .technology_container_text_2 {
+    margin-top: 10px;
+  }
+  .technology_container_image {
+    padding-bottom: 0;
+    margin-top: 40px;
+  }
+
+  .technology_container_text_block_1 {
+    margin-left: 50px;
+  }
+  .technology_container_text_block_2 {
+    margin-left: 50px;
+  }
+  .text_number {
+    margin-left: 50px;
+  }
+  .technology_container_flex_details {
+    padding-left: 0;
+  }
+  .problems_container_1_1 {
+    width: auto;
+    margin: 50px 15px;
+  }
+  .container_2_text {
+    font-size: 35px;
+  }
+  .problems_text {
+    margin-left: 0;
+  }
+  .problems_container2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  .block_number {
+    margin-left: 100px;
+  }
+  .block_img {
+    margin-left: -100px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .vector {
+    margin-left: 327px;
+  }
+  .technology_container_text_1 {
+    margin-top: -156px;
+  }
+  .main_container {
+    padding-left: 10px;
+  }
+}
