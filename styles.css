@@ -310,6 +310,12 @@ a {
     justify-content: center;
   }
 }
+
+@media only screen and (max-width: 1220px) {
+  a {
+    margin-right: -24px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   a {
     margin-right: -24px;
