@@ -248,7 +248,7 @@ a {
   padding-left: 50px;
   font-size: 24px;
   border-left: 3px solid #e0e0e0;
-  width: auto;
+  width: 25%;
   display: flex;
   flex-direction: column;
   height: auto;
@@ -299,7 +299,128 @@ a {
 .block_text {
   margin-top: -142px;
 }
-
+.investment {
+  display: flex;
+  flex-direction: row;
+}
+.investment-head {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  width: 50%;
+}
+.investment-head-paragraph-blue {
+  color: #0536fc;
+  font-family: "Basis Grotesque Bold";
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-left: 210px;
+}
+.investment-head-title {
+  text-transform: uppercase;
+  font-family: "Basis Grotesque Bold";
+  font-weight: 700;
+  font-size: 38px;
+  margin-left: 210px;
+}
+.investment-head-paragraph {
+  font-family: "Basis Grotesque Bold";
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-left: 210px;
+}
+.investment-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 365px;
+}
+.investment-form--payment_method {
+  margin-right: 30px;
+}
+.investment-form-paragraph {
+  font-family: "Basis Grotesque Bold";
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 50px;
+}
+.investment-form-sum {
+  margin-top: 40px;
+  margin-right: 85px;
+}
+.investment-form-input-sum {
+  display: none;
+}
+.investment-form-label-sum {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 25%;
+  text-align: center;
+  padding: 13px 0;
+  margin-top: 0;
+  border: 1px solid #e5e5e5;
+  cursor: pointer;
+  margin-right: -6px;
+}
+input[name="payment_sum"]:checked + label {
+  background: #0536fc;
+  color: #ffffff;
+  border: 1px solid #0536fc;
+}
+.investment-form-label-sum-other {
+  border: 1px solid #e5e5e5;
+  width: 100%;
+  color: #e5e5e5;
+  font-family: "Basis Grotesque Pro";
+  font-size: 16px;
+  width: 822px;
+  padding-left: 35px;
+  height: 50px;
+}
+.investment-form-label-sum-other:hover {
+  border: 1px solid #e5e5e5;
+}
+.investment-form-payment-period {
+  margin-top: 20px;
+}
+.investment-form-name-email {
+  padding-top: 50px;
+  font-family: "Basis Grotesque Bold";
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.connection--input {
+  border: 0;
+  font-family: "Basis Grotesque Pro";
+  font-size: 16px;
+  color: #000000;
+  opacity: 0.35;
+  border-bottom: 2px solid #e5e5e5;
+  width: 500px;
+  margin-top: 20px;
+  padding-bottom: 5px;
+}
+.connection--input:hover {
+  border-bottom: 2px solid #e5e5e5;
+}
+.investment-form--checkbox {
+  margin-top: 32px;
+}
+.checkbox {
+  border: 0;
+}
+input:hover {
+  border: 0;
+}
+.terms_link {
+  color: #0536fc;
+  cursor: pointer;
+}
+.investment-form .button {
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
 @media only screen and (max-width: 1440px) {
   .container3_text_3 {
     margin-top: 50px;
@@ -309,11 +430,39 @@ a {
     padding: 0;
     justify-content: center;
   }
+  .investment-form-label-sum-other {
+    width: 591px;
+  }
 }
 
 @media only screen and (max-width: 1220px) {
   a {
     margin-right: -24px;
+  }
+  .investment-form-label-sum-other {
+    width: 481px;
+  }
+  .problems_container2 {
+    display: flex;
+    justify-content: flex-end;
+    grid-gap: 170px;
+    margin-right: 150px;
+  }
+  .container_2_block_right {
+    padding-left: 0;
+    width: 50%;
+  }
+  .programm {
+    margin-left: 50px;
+  }
+  .container_2_text {
+    margin-left: 50px;
+  }
+  .organization {
+    margin-left: 50px;
+  }
+  .container_2_block_right button {
+    margin-left: 50px;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -382,7 +531,38 @@ a {
   .technology_container_image {
     margin-top: 100px;
   }
+  .investment-head-paragraph-blue {
+    color: #0536fc;
+    font-family: "Basis Grotesque Bold";
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 120px;
+  }
+  .investment-head-title {
+    text-transform: uppercase;
+    font-family: "Basis Grotesque Bold";
+    font-weight: 700;
+    font-size: 38px;
+    margin-left: 120px;
+  }
+  .investment-head-paragraph {
+    font-family: "Basis Grotesque Bold";
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 120px;
+  }
+  .investment-form-label-sum-other {
+    width: 383px;
+  }
+  .connection--input {
+    width: 410px;
+  }
+  .learn_for_ukraine .organization {
+    margin-left: 0px;
+  }
 }
+
 @media only screen and (max-width: 768px) {
   .logo::after {
     display: none;
@@ -416,9 +596,11 @@ a {
   }
   .container3_text_3 {
     margin-top: 0px;
+    margin-left: 20px;
   }
   .container3_text_2 {
     margin-top: 10px;
+    margin-left: 20px;
   }
   .vector {
     padding: 10px;
@@ -431,6 +613,33 @@ a {
     padding-left: 50px;
     border-bottom: 3px solid #e0e0e0;
     width: 100%;
+  }
+  .investment-form-label-sum-other {
+    width: 427px;
+  }
+  .learn_for_ukraine .organization {
+    margin-left: 0px;
+  }
+  .container3_text_1 {
+    margin-left: 20px;
+  }
+  .investment-form--payment {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 5px;
+  }
+  .investment-form {
+    margin-top: 420px;
+  }
+  .investment-form-sum {
+    margin-top: 5px;
+    margin-right: 0px;
+  }
+  .investment-form-label-sum-other {
+    width: 340px;
+  }
+  .connection--input {
+    width: 363px;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -497,6 +706,9 @@ a {
     max-width: 500px;
     border-left: 0;
     height: auto;
+  }
+  .technology_container_flex_details .vector {
+    margin-left: 400px;
   }
   .technology_container_text_block_1 {
     font-weight: 700;
@@ -599,6 +811,52 @@ a {
   .problems_text {
     margin-left: 30px;
   }
+  .container_2_block_right {
+    padding-left: 0;
+    width: 100%;
+  }
+  .investment {
+    display: flex;
+    flex-direction: column;
+  }
+  .investment-head {
+    width: auto;
+    margin-top: 20px;
+  }
+  .investment-form {
+    width: auto;
+    margin-top: 0;
+    align-items: center;
+    text-align: center;
+  }
+  .investment-form--payment {
+    align-items: center;
+    margin-top: 20px;
+  }
+  .investment-form-label-sum {
+    width: 25%;
+  }
+  p.investment-form-paragraph {
+    text-align: center;
+  }
+  .investment-head-paragraph-blue {
+    margin-left: 20px;
+  }
+  .investment-head-title {
+    text-transform: uppercase;
+    font-family: "Basis Grotesque Bold";
+    font-weight: 700;
+    font-size: 35px;
+    margin-left: 20px;
+  }
+  .investment-head-paragraph {
+    margin: 0;
+    text-align: center;
+  }
+  .investment-form-label-sum-other {
+    width: 391px;
+    margin-left: 5px;
+  }
 }
 @media only screen and (max-width: 428px) {
   .learn_for_ukraine {
@@ -653,6 +911,25 @@ a {
   .block_img {
     margin-left: -100px;
   }
+  .investment-form-sum {
+    text-align: center;
+  }
+  .investment-form-label-sum {
+    width: 20%;
+  }
+  .investment-form-label-sum-other {
+    width: 300px;
+    text-align: center;
+    margin-left: 5px;
+  }
+  .investment-form-payment-period {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .investment-form {
+    align-items: center;
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 375px) {
   .vector {
@@ -663,5 +940,11 @@ a {
   }
   .main_container {
     padding-left: 10px;
+  }
+  .investment-form-label-sum-other {
+    width: 256px;
+  }
+  .technology_container_flex_details .vector {
+    margin-left: 325px;
   }
 }

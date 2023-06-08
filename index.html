@@ -231,9 +231,9 @@
   </div>
   <div class="partners">
     <div class="partners-head">
-      <p class="partners-main-paragraph">Партнери</p>
-      <h1 class="support-title">співпрацюємо — з однодумцями</h1>
-      <p class="support-paragraph-grey">
+      <p class="partners-head-paragraph-blue">Партнери</p>
+      <h1 class="support-head-title">співпрацюємо — з однодумцями</h1>
+      <p class="support-head-paragraph-grey">
         Партнери є невід’ємною частиною нашої спільноти — саме вони роблять всі
         наші зусилля можливим.
       </p>
@@ -280,9 +280,11 @@
   </div>
   <div class="connection">
     <div class="connection-head">
-      <p class="connection-main-paragraph">зв’язок</p>
-      <h1 class="connection-title">будь частиною змін у країні – напиши нам</h1>
-      <p class="connection-paragraph-grey">
+      <p class="connection-head-paragraph-blue">зв’язок</p>
+      <h1 class="connection-head-title">
+        будь частиною змін у країні – напиши нам
+      </h1>
+      <p class="connection-head-paragraph-grey">
         Якщо в тебе залишились додаткові питання або ти хочеш бути частиною
         прогресивного руху в Україні — обов’язково напиши нам.
       </p>
@@ -316,7 +318,140 @@
           placeholder="Напишіть вашу електронну адресу"
           required
         />
-        <button class="connection--button">Відправити</button>
+        <button class="form-button">Відправити</button>
+      </form>
+    </div>
+  </div>
+  <div class="investment">
+    <div class="investment-head">
+      <p class="investment-head-paragraph-blue">Інвестиції</p>
+      <h1 class="investment-head-title">
+        зробити <br />
+        — інвестиції у програму
+      </h1>
+      <p class="investment-head-paragraph">виберіть спосіб оплати</p>
+    </div>
+    <div class="investment-form">
+      <form action="result.html" method="get">
+        <div class="investment-form--payment">
+          <div>
+            <input type="radio" name="payment_method" id="bank_card" checked />
+            <label class="investment-form--payment_method" for="bank_card"
+              >Банківська карта</label
+            >
+          </div>
+          <div>
+            <input type="radio" name="payment_method" id="PayPal" />
+            <label class="investment-form--payment_method" for="PayPal"
+              >PayPal</label
+            >
+          </div>
+          <div>
+            <input type="radio" name="payment_method" id="wire_transfer" />
+            <label class="investment-form--payment_method" for="wire_transfer"
+              >Банківська платіжна квитанція</label
+            >
+            <p class="investment-form-paragraph">Банківська картка</p>
+          </div>
+        </div>
+        <div class="investment-form-sum">
+          <input
+            class="investment-form-input-sum"
+            type="radio"
+            name="payment_sum"
+            id="50000"
+            checked
+          />
+          <label class="investment-form-label-sum" for="50000">50000</label>
+          <input
+            class="investment-form-input-sum"
+            type="radio"
+            name="payment_sum"
+            id="30000"
+          />
+          <label class="investment-form-label-sum" for="30000">30000</label>
+          <input
+            class="investment-form-input-sum"
+            type="radio"
+            name="payment_sum"
+            id="10000"
+          />
+          <label class="investment-form-label-sum" for="10000">10000</label>
+          <input
+            class="investment-form-input-sum"
+            type="radio"
+            name="payment_sum"
+            id="1000"
+          />
+          <label class="investment-form-label-sum" for="1000">1000</label>
+        </div>
+        <input
+          class="investment-form-label-sum-other"
+          type="text"
+          name="payment_sum"
+          id="other"
+          placeholder="Інша сумма"
+        />
+        <div class="investment-form-payment-period">
+          <input type="radio" name="payment_period" id="every_month" checked />
+          <label for="every_month">Щомісячно</label>
+          <input type="radio" name="payment_period" id="once_month" />
+          <label for="once_month">Одноразово</label>
+        </div>
+        <div class="investment-form-name-email">
+          <label for="name_payment">Ім'я</label>
+        </div>
+        <div>
+          <input
+            class="connection--input"
+            type="name"
+            name="name"
+            id="name_payment"
+            placeholder="Напишіть ваше ім’я"
+            required
+          />
+        </div>
+        <div class="investment-form-name-email">
+          <label for="email_payment">Email</label>
+        </div>
+        <div>
+          <input
+            class="connection--input"
+            type="email"
+            name="email"
+            id="email_payment"
+            placeholder="Напишіть вашу електронну адресу"
+            required
+          />
+        </div>
+        <div class="investment-form--checkbox">
+          <input
+            class="checkbox"
+            type="checkbox"
+            name="terms1"
+            id="terms1"
+            required
+          />
+          <label for="terms1"
+            >Я приймаю <span class="terms_link">Договір оферти</span></label
+          >
+        </div>
+        <div class="investment-form--checkbox">
+          <input
+            class="checkbox"
+            type="checkbox"
+            name="terms2"
+            id="terms2"
+            required
+          />
+          <label for="terms2"
+            >Я приймаю
+            <span class="terms_link"
+              >Угоду про використання персональних даних</span
+            >
+          </label>
+        </div>
+        <button class="button">Відправити</button>
       </form>
     </div>
   </div>
